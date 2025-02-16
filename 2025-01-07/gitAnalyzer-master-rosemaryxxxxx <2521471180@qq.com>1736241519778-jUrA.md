@@ -23,3 +23,9 @@
 - **建议**：检查整个代码库的风格一致性，确保所有测试都遵循相同的命名约定和代码格式。
 
 总结：新增加的测试方法在实现上有几个需要注意的地方，包括测试方法的目的是否正确、异常处理、代码风格和可读性。建议按照上述建议进行修改，以提高代码的质量和可维护性。
+
+```mermaid
+erDiagram
+CUSTOMER ||--o{ ORDER : places
+ORDER ||--|{ LINE-ITEM : contains
+CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
